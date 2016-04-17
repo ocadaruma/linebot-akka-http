@@ -2,13 +2,13 @@ package com.mayreh.linebot
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.model.headers.RawHeader
-import com.mayreh.linebot.model.{Content, MessageRequest, Message}
 import akka.http.scaladsl.server.Directives._
-import com.mayreh.linebot.serialize.message._
-import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import akka.stream.ActorMaterializer
+import com.mayreh.linebot.model.{Content, Message, MessageRequest}
+import com.mayreh.linebot.serialize.message._
 import spray.json._
 
 import scala.concurrent.ExecutionContext
