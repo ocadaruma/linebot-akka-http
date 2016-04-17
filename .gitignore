@@ -1,0 +1,31 @@
+*.class
+*.log
+.classpath
+.project
+.settings
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+bin/
+
+# Intellij-IDEA specific
+.idea
+*.iml
+*.ipr
+*.iws
+
+# OSX
+.DS_Store
+
+*/.cache-main
+*/.cache-tests
+cache/
